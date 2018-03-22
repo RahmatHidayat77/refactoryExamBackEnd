@@ -8,17 +8,16 @@ myApp.controller('AppCtrl', ['$scope',
                 console.log("I got the data I requeted");
                 $scope.contactlist = response;*/
             $http.get('/contactlist').then(function (response) {
-                console.log('I got the requested data');
-                $scope.contactlist = response.data
-                $scope.contact = "";
+                $scope.contactlist = response.data;
             });
         };
-
+        
         refresh();
         $scope.addContact = function () {
-            console.log($scope.contact);
+            console.log("LANDING HERE CHECK CONTACT", $scope.contact);
             $http.post('/contactlist', $scope.contact).then(function (response) {
                 console.log(response);
+                $scope.deselect();
                 refresh();
             });
         };
@@ -41,6 +40,7 @@ myApp.controller('AppCtrl', ['$scope',
             });
         };
         $scope.deselect = function () {
-            $scope.contact = ""
+            console.log("LANDING HERE TO CHECK");
+            $scope.contact = null;
         }
     }]);

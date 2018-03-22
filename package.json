@@ -1,0 +1,23 @@
+{
+  "name": "contactlistapp",
+  "version": "1.0.0",
+  "description": "refactoryExam",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RahmatHidayat77/refactoryExamBackEnd.git"
+  },
+  "author": "Rahmat H",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RahmatHidayat77/refactoryExamBackEnd/issues"
+  },
+  "homepage": "https://github.com/RahmatHidayat77/refactoryExamBackEnd#readme",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
