@@ -36,8 +36,9 @@ myApp.controller('AppCtrl', ['$scope',
         $scope.update = function () {
             console.log($scope.contact._id);
             $http.put('/contactlist/' + $scope.contact._id, $scope.contact).then(function (response) {
-                refresh();
+                $scope.contact = null;                
             });
+            
         };
         $scope.deselect = function () {
             console.log("LANDING HERE TO CHECK");
