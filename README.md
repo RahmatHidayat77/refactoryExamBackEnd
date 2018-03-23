@@ -36,6 +36,4 @@ localhost:3001
 then click enter, so you can see that Contact List App is runninng on your browser.
 ```
 - License : ISC
-
-
-### This application is under maintanance, there are many bugs of this application. You can help me to solve this bugs.
+### Fix Bugs
