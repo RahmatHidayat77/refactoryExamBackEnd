@@ -49,4 +49,4 @@ app.put('/contactlist/:id', function (req, res){
 });
 
 app.listen(3001);
-console.log("Server running on server 3001");
+console.log("Server running on http://localhost:3001");
